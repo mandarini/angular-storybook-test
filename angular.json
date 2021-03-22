@@ -29,6 +29,11 @@
     },
     "@nrwl/angular:component": {
       "style": "css"
+    },
+    "@nrwl/react": {
+      "application": {
+        "babel": true
+      }
     }
   },
   "projects": {
@@ -252,6 +257,27 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": ["apps/ui-test-e2e/**/*.{js,ts}"]
+          }
+        }
+      }
+    },
+    "ui-react": {
+      "root": "libs/ui-react",
+      "sourceRoot": "libs/ui-react/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/ui-react/**/*.{ts,tsx,js,jsx}"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/ui-react"],
+          "options": {
+            "jestConfig": "libs/ui-react/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }

@@ -27,6 +27,7 @@
     "test": { "tags": [] },
     "test-e2e": { "tags": [], "implicitDependencies": ["test"] },
     "ui-test": { "tags": [] },
-    "ui-test-e2e": { "tags": [], "implicitDependencies": ["ui-test"] }
+    "ui-test-e2e": { "tags": [], "implicitDependencies": ["ui-test"] },
+    "ui-react": { "tags": [] }
   }
 }
