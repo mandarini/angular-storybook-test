@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@story-angular/ui-test": ["libs/ui-test/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
